@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<units>
+<unit>
+  <name>Lightning</name>
+  <lvl>100</lvl>
+  <hp>4379</hp>
+  <atk>476</atk>
+  <mag>199</mag>
+  <mp>215</mp>
+  <def>181</def>
+  <spr>177</spr>
+  <image></image>
+</unit>
+<unit>
+  <name>Cecil</name>
+  <lvl>100</lvl>
+  <hp>5872</hp>
+  <atk>255</atk>
+  <mag>128</mag>
+  <mp>184</mp>
+  <def>437</def>
+  <spr>174</spr>
+  <image></image>
+</unit>
+<unit>
+  <name>Luneth</name>
+  <lvl>100</lvl>
+  <hp>4400</hp>
+  <atk>549</atk>
+  <mag>182</mag>
+  <mp>177</mp>
+  <def>205</def>
+  <spr>144</spr>
+  <image></image>
+</unit>
+<unit>
+  <name>Exdeath</name>
+  <lvl>100</lvl>
+  <hp>3147</hp>
+  <atk>150</atk>
+  <mag>451</mag>
+  <mp>290</mp>
+  <def>227</def>
+  <spr>171</spr>
+  <image></image>
+</unit>
+  <unit>
+    <name>Tilith</name>
+    <lvl>80</lvl>
+    <hp>2174</hp>
+    <atk>95</atk>
+    <mag>195</mag>
+    <mp>292</mp>
+    <def>145</def>
+    <spr>263</spr>
+    <image></image>
+  </unit>
+</units>
