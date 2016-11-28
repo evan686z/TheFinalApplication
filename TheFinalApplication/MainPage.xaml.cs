@@ -22,9 +22,16 @@ namespace TheFinalApplication
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        private List<Unit> Units;
+
         public MainPage()
         {
             this.InitializeComponent();
+        }
+
+        private void GridView_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
         }
     }
 }

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TheFinalApplication.Models
+namespace TheFinalApplication
 {
-    class Unit
+    public class Unit
     {
         public string UnitName { get; set; }
         public int UnitLVL { get; set; }
