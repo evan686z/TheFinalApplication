@@ -33,5 +33,10 @@ namespace TheFinalApplication
         {
 
         }
+
+        private void FilterButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
