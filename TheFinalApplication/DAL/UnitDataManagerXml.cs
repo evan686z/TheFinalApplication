@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TheFinalApplication.Data
+namespace TheFinalApplication.DAL
 {
-    class DataSettings
+    class UnitDataManagerXml
     {
-        public const string dataFilePath = "Data\\Data.xml";
     }
 }

@@ -96,8 +96,8 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="DAL\UnitRepository.cs" />
-    <Compile Include="Data\DataSettings.cs" />
+    <Compile Include="DAL\UnitDataManagerXml.cs" />
+    <Compile Include="DAL\UnitDataServiceXml.cs" />
     <Compile Include="Data\InitializeData.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
