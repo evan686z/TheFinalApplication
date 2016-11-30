@@ -12,6 +12,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using TheFinalApplication;
+using Windows.UI.Xaml.Media.Imaging;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -27,10 +29,22 @@ namespace TheFinalApplication
         public MainPage()
         {
             this.InitializeComponent();
+            this.IntializeDataContext();
         }
+        private async void IntializeDataContext()
+        {
+            //IntializeData.WriteTestDataToFileXml();
 
+            Units = await UnitDataServiceXml.ReadObjectFromXmlFileAsync<List<Unit>>("Units.xml");
+            UnitDataManagerXml unitDataManager = new UnitDataManagerXml(Units);
+        }
         private void GridView_ItemClick(object sender, ItemClickEventArgs e)
         {
+            var unit = (Unit)e.ClickedItem;
+            UnitName.Text = unit.UnitName;
+
+            BitmapImage bitmapImage = new BitmapImage(new Uri(this.BaseUri, $"/{unit.UnitImage}"));
+            UnitImage.Source = bitmapImage;
 
         }
 

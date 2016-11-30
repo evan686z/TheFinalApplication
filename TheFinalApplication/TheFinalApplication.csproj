@@ -98,7 +98,7 @@
     </Compile>
     <Compile Include="DAL\UnitDataManagerXml.cs" />
     <Compile Include="DAL\UnitDataServiceXml.cs" />
-    <Compile Include="Data\InitializeData.cs" />
+    <Compile Include="Data\IntializeData.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -125,7 +125,7 @@
     <Content Include="Assets\Unit-Refia-6.png" />
     <Content Include="Assets\Unit-Tellah-5.png" />
     <Content Include="Assets\Unit-Tilith-5.png" />
-    <Content Include="Data\Data.xml" />
+    <Content Include="Documentation\Data.xml" />
     <Content Include="Documentation\ReadMe.txt" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />

@@ -21,11 +21,9 @@
                         Width="220">
                 <StackPanel Orientation="Horizontal">
                     <TextBlock FontSize="16"
-                               Margin="10"
-                               Text="Unit Name: " />
-                    <TextBlock FontSize="16"
                                Width="200"
                                Margin="10"
+                               TextAlignment="Center"
                                Text="{x:Bind UnitName}" />
                 </StackPanel>
             </StackPanel>
@@ -65,20 +63,17 @@
         </StackPanel>
 
         <StackPanel Grid.Column="1">
-            <TextBlock HorizontalAlignment="Center"
-                       Name="ResultTextBlock"
-                       FontSize="14"
-                       Foreground="Red"
-                       FontWeight="Bold"
-                       Text="Choose a Unit to Display"
-                       Margin="0,20,0,0" />
             <Image Width="200"
                    Name="UnitImage"
                    Grid.Row="1"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Top"
                    Margin="10" />
-            <TextBlock FontSize="16"
+            <TextBox Name="UnitName"
+                     FontSize="16"
+                     Width="200"
+                     Margin="10" />
+            <!--<TextBlock FontSize="16"
                        Width="200"
                        Margin="10"
                        Text="{x:Bind UnitName}" />
@@ -109,7 +104,7 @@
             <TextBlock FontSize="16"
                        Width="200"
                        Margin="10"
-                       Text="{x:Bind UnitSPR}" />
+                       Text="{x:Bind UnitSPR}" />-->
         </StackPanel>
     </Grid>
 </Page>

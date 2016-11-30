@@ -8,6 +8,7 @@ namespace TheFinalApplication
 {
     public class Unit
     {
+        public int ID { get; set; }
         public string UnitName { get; set; }
         public int UnitLVL { get; set; }
         public int UnitHP { get; set; }
