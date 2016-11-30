@@ -48,9 +48,43 @@ namespace TheFinalApplication
 
         }
 
-        private void FilterButton_Click(object sender, RoutedEventArgs e)
-        {
+        //private void FilterButton_Click(object sender, RoutedEventArgs e)
+        //{
+        //    List<Unit> filteredListUnits = new List<Unit>();
 
+        //    foreach (Unit unit in Units)
+        //    {
+        //        if (unit.UnitName == Filter_TextBox.Text)
+        //        {
+        //            filteredListUnits.Add(unit);
+        //        }
+        //    }
+        //    UnitListView_ListView.ItemsSource = filteredListUnits;
+        //}
+
+        private void ResetFilter_Click(object sender, RoutedEventArgs e)
+        {
+            UnitListView_ListView.ItemsSource = Units;
+        }
+
+        /// <summary>
+        /// Replaced the button with the keyDown event, so you
+        /// can press enter to have the same effect as the button did
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Filter_TextBox_KeyDown(object sender, KeyRoutedEventArgs e)
+        {
+            List<Unit> filteredListUnits = new List<Unit>();
+
+            foreach (Unit unit in Units)
+            {
+                if (unit.UnitName == Filter_TextBox.Text)
+                {
+                    filteredListUnits.Add(unit);
+                }
+            }
+            UnitListView_ListView.ItemsSource = filteredListUnits;
         }
     }
 }

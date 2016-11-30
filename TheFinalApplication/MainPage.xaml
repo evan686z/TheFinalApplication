@@ -13,16 +13,25 @@
                       x:Key="UnitDataTemplate">
             <StackPanel HorizontalAlignment="Left"
                         VerticalAlignment="Top"
-                        BorderBrush="#FFCB5252"
-                        BorderThickness="1"
                         CornerRadius="5"
-                        Background="#FFF4B238"
-                        Opacity="0.6"
-                        Width="220">
+                        Margin="2"
+                        Opacity="1"
+                        Width="170">
+                <StackPanel.Background>
+                    <LinearGradientBrush EndPoint="0.5,1"
+                                         StartPoint="0.5,0">
+                        <GradientStop Color="#FF4D7287"
+                                      Offset="0" />
+                        <GradientStop Color="#FF30A8EC"
+                                      Offset="1" />
+                    </LinearGradientBrush>
+                </StackPanel.Background>
                 <StackPanel Orientation="Horizontal">
                     <TextBlock FontSize="16"
-                               Width="200"
-                               Margin="10"
+                               Width="150"
+                               Foreground="White"
+                               FontFamily="Elephant"
+                               Margin="010"
                                TextAlignment="Center"
                                Text="{x:Bind UnitName}" />
                 </StackPanel>
@@ -33,7 +42,7 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
           Margin="20">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="250" />
+            <ColumnDefinition Width="230" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
@@ -55,11 +64,14 @@
             <TextBox Name="Filter_TextBox"
                      FontSize="16"
                      Width="200"
-                     Margin="10" />
-            <Button Name="FilterButton"
+                     Margin="10"
+                     PlaceholderText="Search for Unit by Name"
+                     KeyDown="Filter_TextBox_KeyDown" />
+            <Button Name="ResetFilter"
                     HorizontalAlignment="Center"
-                    Content="Filter by Name"
-                    Click="FilterButton_Click" />
+                    Margin="5"
+                    Content="Reset Filter"
+                    Click="ResetFilter_Click" />
         </StackPanel>
 
         <StackPanel Grid.Column="1">
@@ -72,7 +84,8 @@
             <TextBox Name="UnitName"
                      FontSize="16"
                      Width="200"
-                     Margin="10" />
+                     Margin="10"
+                     IsReadOnly="True" />
             <!--<TextBlock FontSize="16"
                        Width="200"
                        Margin="10"
