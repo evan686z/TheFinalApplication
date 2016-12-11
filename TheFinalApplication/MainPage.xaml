@@ -39,7 +39,7 @@
         </DataTemplate>
     </Page.Resources>
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    <Grid Background="#FF40D6FA"
           Margin="20">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="230" />
@@ -68,18 +68,6 @@
                      Margin="10"
                      PlaceholderText="Search for Unit by Name"
                      KeyDown="Filter_TextBox_KeyDown" />
-            <Button Name="HighATK"
-                    HorizontalAlignment="Center"
-                    Width="115"
-                    Margin="5"
-                    Content="ATK > 200"
-                    Click="HighATK_Click" />
-            <Button Name="HighMAG"
-                    HorizontalAlignment="Center"
-                    Width="115"
-                    Margin="5"
-                    Content="MAG > 200"
-                    Click="HighMAG_Click" />
             <Button Name="ResetFilter"
                     HorizontalAlignment="Center"
                     Width="115"
@@ -97,6 +85,8 @@
                    Margin="5" />
             <TextBlock Name="Name"
                        Text="Name:"
+                       FontFamily="Elephant"
+                       Foreground="#FF3682B7"
                        VerticalAlignment="Top"
                        HorizontalAlignment="Center"
                        Margin="5"/>
@@ -106,17 +96,33 @@
                      IsReadOnly="True" />
             <TextBlock Name="Job"
                        Text="Job:"
+                       FontFamily="Elephant"
+                       Foreground="#FF3682B7"
                        VerticalAlignment="Top"
                        HorizontalAlignment="Center" />
             <TextBox Name="UnitJob"
                      FontSize="16"
                      Width="200"
                      IsReadOnly="True" />
+            <Button Name="HighATK"
+                    HorizontalAlignment="Center"
+                    Width="115"
+                    Margin="5"
+                    Content="ATK > 200"
+                    Click="HighATK_Click" />
+            <Button Name="HighMAG"
+                    HorizontalAlignment="Center"
+                    Width="115"
+                    Margin="5"
+                    Content="MAG > 200"
+                    Click="HighMAG_Click" />
         </StackPanel>
 
         <StackPanel Grid.Column="2">
             <TextBlock Name="LVL"
                        Text="LVL:"
+                       FontFamily="Elephant"
+                       Foreground="#FF3682B7"
                        VerticalAlignment="Top"
                        HorizontalAlignment="Center"
                        Margin="10"/>
@@ -127,6 +133,8 @@
                      IsReadOnly="True" />
             <TextBlock Name="HP"
                        Text="HP:"
+                       FontFamily="Elephant"
+                       Foreground="#FF3682B7"
                        VerticalAlignment="Top"
                        HorizontalAlignment="Center" />
             <TextBox Name="UnitHP"
@@ -136,6 +144,8 @@
                      IsReadOnly="True" />
             <TextBlock Name="ATK"
                        Text="ATK:"
+                       FontFamily="Elephant"
+                       Foreground="#FF3682B7"
                        VerticalAlignment="Top"
                        HorizontalAlignment="Center" />
             <TextBox Name="UnitATK"
@@ -145,6 +155,8 @@
                      IsReadOnly="True" />
             <TextBlock Name="MAG"
                        Text="MAG:"
+                       FontFamily="Elephant"
+                       Foreground="#FF3682B7"
                        VerticalAlignment="Top"
                        HorizontalAlignment="Center" />
             <TextBox Name="UnitMAG"
@@ -154,6 +166,8 @@
                      IsReadOnly="True" />
             <TextBlock Name="MP"
                        Text="MP:"
+                       FontFamily="Elephant"
+                       Foreground="#FF3682B7"
                        VerticalAlignment="Top"
                        HorizontalAlignment="Center" />
             <TextBox Name="UnitMP"
@@ -163,6 +177,8 @@
                      IsReadOnly="True" />
             <TextBlock Name="DEF"
                        Text="DEF:"
+                       FontFamily="Elephant"
+                       Foreground="#FF3682B7"
                        VerticalAlignment="Top"
                        HorizontalAlignment="Center" />
             <TextBox Name="UnitDEF"
@@ -172,8 +188,10 @@
                      IsReadOnly="True" />
             <TextBlock Name="SPR"
                        Text="SPR:"
+                       FontFamily="Elephant"
                        VerticalAlignment="Top"
-                       HorizontalAlignment="Center" />
+                       HorizontalAlignment="Center"
+                       Foreground="#FF3682B7" />
             <TextBox Name="UnitSPR"
                      FontSize="16"
                      Width="200"
