@@ -43,7 +43,7 @@
           Margin="20">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="230" />
-            <ColumnDefinition Width="240" />
+            <ColumnDefinition Width="300" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
@@ -82,7 +82,7 @@
                    Grid.Row="1"
                    HorizontalAlignment="Left"
                    VerticalAlignment="Top"
-                   Margin="5" />
+                   Margin="10 50 10 0" />
             <TextBlock Name="Name"
                        Text="Name:"
                        FontFamily="Elephant"
@@ -125,7 +125,7 @@
                        Foreground="#FF3682B7"
                        VerticalAlignment="Top"
                        HorizontalAlignment="Center"
-                       Margin="10"/>
+                       Margin="0 60 0 0"/>
             <TextBox Name="UnitLVL"
                      FontSize="16"
                      Width="200"
