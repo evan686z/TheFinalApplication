@@ -10,6 +10,7 @@ namespace TheFinalApplication
     {
         public int ID { get; set; }
         public string UnitName { get; set; }
+        public string UnitJob { get; set; }
         public int UnitLVL { get; set; }
         public int UnitHP { get; set; }
         public int UnitATK { get; set; }
