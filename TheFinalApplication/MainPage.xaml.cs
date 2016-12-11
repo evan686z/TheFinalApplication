@@ -33,7 +33,7 @@ namespace TheFinalApplication
         }
         private async void IntializeDataContext()
         {
-            //IntializeData.WriteTestDataToFileXml();
+            IntializeData.WriteTestDataToFileXml();
 
             Units = await UnitDataServiceXml.ReadObjectFromXmlFileAsync<List<Unit>>("Units.xml");
             UnitDataManagerXml unitDataManager = new UnitDataManagerXml(Units);
